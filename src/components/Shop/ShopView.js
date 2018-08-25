@@ -10,6 +10,7 @@ import EmptyPage from "../Pages/EmptyPage";
 import Loading from "../General/Loading";
 import ShopProductList from "./ShopProductList";
 import ShopWithdraw from "./ShopWithdraw";
+import Image from "../General/Image";
 
 class ShopView extends Component {
     constructor(props) {
@@ -63,8 +64,9 @@ class ShopView extends Component {
                         <h2>{this.state.name}</h2>
                         <div className="pure-g">
                             <div className="pure-u-1-4">
-                                <div className="logo entity"><img className="pure-img" src={this.state.logo} width={200}
-                                                                  height={200} alt={this.state.name}/></div>
+                                <div className="logo entity">
+                                    <Image url={this.state.logo} width={200} height={200}
+                                           title={this.state.name}/></div>
                             </div>
                             <div className="pure-u-3-4">
                                 <div className="shop-name entity"><b>Contract Address: </b>{this.state.address}

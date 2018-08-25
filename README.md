@@ -115,15 +115,16 @@ $ truffle test
 $ truffle migrate
 ```
 
-### Start web server localhost:3000
-```
-$ npm run start
-```
-
 ### Metamask configuration
 Open metamask plugin in your browser. Logout from your current account. Click
 *Import using account seed phrase*
 Use mnemonics you saved before
+
+
+### Start web server localhost:3000
+```
+$ npm run start
+```
 
   
 ## More information
