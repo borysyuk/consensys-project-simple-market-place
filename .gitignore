@@ -1,0 +1,7 @@
+build
+node_modules
+truffle-config.js
+package-lock.json
+.soliumignore
+.soliumrc.json
+.idea

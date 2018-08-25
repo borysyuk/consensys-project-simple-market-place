@@ -1,0 +1,23 @@
+const SimpleShopFactory = artifacts.require('SimpleShopFactoryMock');
+const SimpleShopFactoryLibrary = artifacts.require("./libraries/SimpleShopFactory.sol");
+
+contract('SimpleShopFactory', function ([_, owner]) {
+
+    beforeEach(async function (){
+        this.mock = await SimpleShopFactory.new({ from: owner });
+    });
+
+
+    context('general', async function (){
+        it('should exists', async function (){
+        });
+    });
+
+    context('create', async function (){
+        it('should create a shop', async function (){
+            let address = await this.mock.create('name1', 'description1', 'logo1', { from: owner });
+            address.should.not.be.null;
+            address.should.not.be.equal('');
+        });
+    });
+});
